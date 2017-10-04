@@ -11,3 +11,4 @@ leftPressed = false
 rightPressed = false
 upPressed = false
 
+reloaded = true
