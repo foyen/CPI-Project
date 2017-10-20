@@ -1,58 +1,61 @@
 /// @description Insert description here
 // You can write your code in this editor
-var vx = object0.x - x; //x compenent of our vector
 
-var vy = object0.y - y; //y component of our vector
- 
-
-var magnitude = sqrt((vx*vx) + (vy*vy)) //a^2 + b^2 = c^2
-
- 
-
-if(magnitude > 0)
-
-{
-
-//calculate the unit vector
-
-var unit_x = vx / magnitude
-
-var unit_y = vy / magnitude
-
+if( abs(point_distance(x, y, object0.x, object0.y)) < 300 )  // near player
+{ 
+	
+	moving_to_loc = false;
+	canfire = true;
+	
+	
+	if(abs (point_distance(x,y, object0.x , object0.y)) < 275) // too close
+	{	
+		move_towards_point(x, y, 0) 
+		Calc_img_angle( object0.x , object0.y, self)
+	}
+	else
+	{
+		
+		move_towards_point(object0.x, object0.y, 5)
+		Calc_img_angle(object0.x, object0.y, self)
+	}
+	
 }
 
-else
-
-{
-
-//avoid divide by 0
-
-                unit_x = 0
-
-                unit_y = 0
+else if(abs(point_distance(x, y, Moving_to_location_x, Moving_to_location_y))< 10)
+{	// at target location
+	
+	Moving_to_location_x = irandom_range(0, room_width );
+	Moving_to_location_y = irandom_range(0, room_height);
+	move_towards_point(Moving_to_location_x, Moving_to_location_y, 5)
+	moving_to_loc = true
+	Calc_img_angle(Moving_to_location_x, Moving_to_location_y, self)
 
 }
+else{
+	if(!moving_to_loc)
+	{
+		//out of range of player	
+	angle = image_angle mod 360
+	if(angle < 0 ) 
+	{
+		angle += 360
+	}
+	varx =   dcos(angle);
+	vary =   dsin(angle);
 
- 
+	
+	move_towards_point(x + varx, (y+ -vary), 5)	
+	Calc_img_angle(x + varx, (y+ (-vary)), self)  // continue forward
+	alarm[3] = room_speed * 3; // Go back
+	
+	moving_to_loc = true;
+	
+	}
+}
 
-velocity_x = unit_x * movement_speed
 
-velocity_y = unit_y * movement_speed
+if(can_fire){
+	//Weapon code here
 
- 
-
-x += velocity_x
-
-y += velocity_y
-
- 
-
-//calculate the angle ... this
-
-var radians = arctan2(-unit_y, unit_x)
-
-image_angle = radtodeg(radians)
-
- 
-
-image_speed = 1
+}

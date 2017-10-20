@@ -229,6 +229,25 @@
             }
         },
         {
+            "Key": "4732fa4a-bab0-487b-b9ac-caa1febde584",
+            "Value": {
+                "id": "852974c3-44c4-40dc-9e18-89930622cd61",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/Calc_img_angle\/Calc_img_angle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "49fc84ac-fb86-4baa-97e9-6913504d5dc4",
             "Value": {
                 "id": "929be6dc-37d8-4b1e-bc65-c424577d4d96",
@@ -340,6 +359,25 @@
                 ],
                 "resourcePath": "objects\/object0\/object0.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "829d6450-4d2c-490b-91c4-a03dc959d58d",
+            "Value": {
+                "id": "bfa6107e-1ec0-4aa9-9bbd-a552a61812b3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/Move_or_follow\/Move_or_follow.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -572,7 +610,8 @@
         }
     ],
     "script_order": [
-        
+        "829d6450-4d2c-490b-91c4-a03dc959d58d",
+        "4732fa4a-bab0-487b-b9ac-caa1febde584"
     ],
     "tutorial": ""
 }

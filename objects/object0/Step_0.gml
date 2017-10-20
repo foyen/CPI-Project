@@ -1,18 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
  if(leftPressed){
- image_angle += 5 mod 360;
+ image_angle += 10 mod 360;
  
  }
  
  
  
  if(rightPressed){
- image_angle -= 5 mod 360;
+ image_angle -= 10 mod 360;
  
  }
  
- if(upPressed){
+ if(upPressed) {
  angle = image_angle mod 360
 varx =   dcos(angle);
 vary =   dsin(angle);
@@ -59,5 +59,6 @@ velocity_y = unit_y * movement_speed
 x += velocity_x
 
 y -= velocity_y
+
  }
  
