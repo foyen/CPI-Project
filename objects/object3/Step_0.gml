@@ -30,6 +30,7 @@ else if(abs(point_distance(x, y, Moving_to_location_x, Moving_to_location_y))< 1
 	move_towards_point(Moving_to_location_x, Moving_to_location_y, 5)
 	moving_to_loc = true
 	Calc_img_angle(Moving_to_location_x, Moving_to_location_y, self)
+	 can_fire = false;
 
 }
 else{
@@ -55,7 +56,8 @@ else{
 }
 
 
-if(can_fire){
+if(can_fire)
+{
 	//Weapon code here
 
 }
