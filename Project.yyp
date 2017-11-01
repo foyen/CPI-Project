@@ -55,10 +55,26 @@
             }
         },
         {
+            "Key": "161cf5df-b5cc-4fb3-a145-7a7c4f77b6d4",
+            "Value": {
+                "id": "7fe7492d-19d4-4569-8481-c22e410887d0",
+                "resourcePath": "objects\\obj_interceptor\\obj_interceptor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "19a71c8d-7f6d-420a-9422-17712343fbb6",
             "Value": {
                 "id": "9c2f2350-072c-47ff-b817-6bb0d1ee7794",
                 "resourcePath": "views\/19a71c8d-7f6d-420a-9422-17712343fbb6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "19d5faed-0ff6-44a4-bad3-f0f6f054133b",
+            "Value": {
+                "id": "be5938c5-6ef6-4de2-a14d-7821eaff77b6",
+                "resourcePath": "views\\19d5faed-0ff6-44a4-bad3-f0f6f054133b.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -68,6 +84,14 @@
                 "id": "a2df160d-3c53-480b-be61-8276f6ed7362",
                 "resourcePath": "sprites\/spr_player\/spr_player.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1cd38ea5-4b06-4435-af0f-4e7cabfae5de",
+            "Value": {
+                "id": "ef85c4e1-3d54-4ab0-a851-bfa93b94d64d",
+                "resourcePath": "objects\\obj_explosion\\obj_explosion.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -84,6 +108,14 @@
                 "id": "f8c18967-3535-49fb-afea-038874b92fd4",
                 "resourcePath": "objects\/obj_bio_weapon\/obj_bio_weapon.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "230aafbd-d0d6-4d27-bbd6-631aa27d8a85",
+            "Value": {
+                "id": "f95773a7-7b54-4e6b-8fed-f2300d4bda2d",
+                "resourcePath": "sprites\\spr_explosion1\\spr_explosion1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -364,6 +396,14 @@
                 "id": "01007fb9-d18d-437b-973e-54b9d49059c0",
                 "resourcePath": "rooms\/room0\/room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d640f785-f4dd-46a7-901c-399103c8a947",
+            "Value": {
+                "id": "3a855567-c824-4689-bc99-e2cb51db4252",
+                "resourcePath": "objects\\obj_game_controller\\obj_game_controller.yy",
+                "resourceType": "GMObject"
             }
         },
         {
