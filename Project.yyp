@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "6f18b393-d340-4b69-858d-6e18b7804fed",
+            "Value": {
+                "id": "933c1ca9-ffd5-4b8e-b449-f9986ffc2e4c",
+                "resourcePath": "objects\\obj_base_enemyweapon\\obj_base_enemyweapon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "73f96088-8515-4a2f-8441-4e61ea69b181",
             "Value": {
                 "id": "a16e711e-09c9-421c-9fb7-408a4fc2241c",
@@ -291,6 +299,14 @@
             "Value": {
                 "id": "46696f2d-a145-43b4-be7e-c97d96878f66",
                 "resourcePath": "views\/85bf82e9-861a-4966-80d3-818ca1f81485.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a437c0e4-d6f6-4977-a4f6-964659c13653",
+            "Value": {
+                "id": "270c16d8-feba-4774-bdc7-88739d2e30a9",
+                "resourcePath": "views\\a437c0e4-d6f6-4977-a4f6-964659c13653.yy",
                 "resourceType": "GMFolder"
             }
         },

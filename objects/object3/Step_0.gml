@@ -13,6 +13,7 @@ if( abs(point_distance(x, y, object0.x, object0.y)) < 300 )  // near player
 		move_towards_point(x, y, 0) 
 		Calc_img_angle( object0.x , object0.y, self)
 	}
+	
 	else
 	{
 		
