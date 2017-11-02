@@ -11,9 +11,10 @@ velocity_y = 0
 leftPressed = false
 rightPressed = false
 upPressed = false
-oldAngle = 0 // the Angle that the ship was facing before W was released, for calculating momentum
+
 angle = 0
 unit_x = 0
 unit_y = 0
 
+alive = true // player starts alive
 reloaded = true

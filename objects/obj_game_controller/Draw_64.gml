@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_set_color(c_white)
+/*draw_set_color(c_white)
 draw_text(50,50,"Enemy old X: " + string(obj_interceptor.x))
 draw_text(50,70,"Enemy new X: " + string(obj_interceptor.x + obj_interceptor.velocity_x))
 draw_text(50,90,"Enemy old Y: " + string(obj_interceptor.y))
