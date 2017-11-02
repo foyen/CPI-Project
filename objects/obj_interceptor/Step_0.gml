@@ -134,3 +134,28 @@ if(can_fire)
 	//Weapon code here
 
 }
+
+// if it reaches the edge of the screen, turn around.
+if (x > room_width)
+{
+	x = room_width
+	velocity_x *= -1
+}
+
+if (x < 0)
+{
+	x = 0
+	velocity_x *= -1
+}
+
+if (y > room_height)
+{
+	y = room_height
+	velocity_y *= -1
+}
+
+if (y < 0)
+{
+	y = 0
+	velocity_y *= -1
+}

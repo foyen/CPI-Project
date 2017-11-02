@@ -65,6 +65,10 @@ if (alive = true)
 	 {
 		 if (movement_speed > 0)
 		 {
+	    	 if(angle < 0 ) 
+			 {
+				angle += 360
+			 }
 	
 			 var magnitude = sqrt((varx*varx) + (vary* vary))
 			 if(magnitude > 0)
