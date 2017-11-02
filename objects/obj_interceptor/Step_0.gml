@@ -11,7 +11,7 @@ if( abs(point_distance(x, y, object0.x, object0.y)) < 800 )  // near player
 	if (!canfire)
 	{
 		canfire = true;
-		alarm[0] = irandom_range(3,5)
+		alarm[0] = irandom_range(3,5)*room_speed
 	}
 	
 	//move_towards_point(x, y, 0) 
@@ -43,9 +43,45 @@ if( abs(point_distance(x, y, object0.x, object0.y)) < 800 )  // near player
 		unit_y = 0
 	}
 
+	// For some reason, the enemies move right faster than they move left.
+	// This code is basically a duct tape solution until I figure out the actual cause of it.
+	/*
+	if (velocity_x > 0 && velocity_y < 0) 
+	{ 
+		//show_debug_message("southeast")
+		max_speed = 22;
+		acceleration = 1.5
+		if (movement_speed > max_speed) { movement_speed = max_speed }
+	}
+	
+	if (velocity_x > 0 && velocity_y > 0) 
+	{ 
+		//show_debug_message("northeast")
+		max_speed = 27;
+		acceleration = 1.8
+		if (movement_speed > max_speed) { movement_speed = max_speed }
+	}
+	
+	if (velocity_x < 0 && velocity_y < 0) 
+	{ 
+		//show_debug_message("southwest")
+		max_speed = 27;
+		acceleration = 1.8
+		if (movement_speed > max_speed) { movement_speed = max_speed }
+	}
+	
+	if (velocity_x < 0 && velocity_y > 0) 
+	{ 
+		//show_debug_message("northwest")
+		max_speed = 32;
+		acceleration = 2.2
+		if (movement_speed > max_speed) { movement_speed = max_speed }
+	}*/
+	
 	velocity_x += (unit_x * movement_speed) / 10
 	velocity_y += (unit_y * movement_speed) / 10
 	
+	// This prevents enemies from moving faster diagonally.
 	var vxy = abs(velocity_x) + abs(velocity_y)
 	if (vxy > max_speed)
 	{

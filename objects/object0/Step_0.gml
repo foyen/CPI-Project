@@ -2,16 +2,16 @@
 // You can write your code in this editor
  angle = image_angle mod 360
 	
- if(leftPressed){
- image_angle += 10 mod 360;
- 
+ if(leftPressed)
+ {
+	image_angle += 10 mod 360;
  }
  
  
  
- if(rightPressed){
- image_angle -= 10 mod 360;
- 
+ if(rightPressed)
+ {
+	image_angle -= 10 mod 360;
  }
  
  if(upPressed) 
@@ -49,7 +49,6 @@
 	{
 		velocity_x = velocity_x * (max_speed / vxy)
 		velocity_y = velocity_y * (max_speed / vxy)
-		show_debug_message("WAKE ME UP");
 	}
 
 	if (movement_speed <= max_speed) { movement_speed += 2; }
@@ -63,6 +62,7 @@
  {
 	 if (movement_speed > 0)
 	 {
+	
 		 var magnitude = sqrt((varx*varx) + (vary* vary))
 		 if(magnitude > 0)
 		 {
@@ -77,17 +77,19 @@
 			unit_x = 0
 			unit_y = 0
 		 }
-		 
-		velocity_x = (unit_x * movement_speed)
-		velocity_y = (unit_y * movement_speed) 
 		
 		var vxy = abs(velocity_x) + abs(velocity_y)
 		if (vxy > max_speed)
 		{
 			velocity_x = velocity_x * (max_speed / vxy)
 			velocity_y = velocity_y * (max_speed / vxy)
-			show_debug_message("WAKE ME UP");
+			//show_debug_message("WAKE ME UP");
 		}
+		
+		if (velocity_x>0) { velocity_x = min(velocity_x, (unit_x * movement_speed)) }
+		if (velocity_y>0) { velocity_y = min(velocity_y, (unit_y * movement_speed)) }
+		if (velocity_x<0) { velocity_x = max(velocity_x, (unit_x * movement_speed)) }
+		if (velocity_y<0) { velocity_y = max(velocity_y, (unit_y * movement_speed)) }
 		
 		x += velocity_x
 		y -= velocity_y

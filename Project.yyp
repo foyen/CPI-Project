@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "6249c32c-839e-498e-93b7-fcf0d4e8aed5",
+            "Value": {
+                "id": "076ff86d-7c7c-48f1-9db9-2f0f1a7dff2f",
+                "resourcePath": "sprites\\enemy_laser\\enemy_laser.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6f18b393-d340-4b69-858d-6e18b7804fed",
             "Value": {
                 "id": "933c1ca9-ffd5-4b8e-b449-f9986ffc2e4c",
