@@ -4,6 +4,8 @@ movement_speed = 0
 max_speed = 30
 
 image_speed = 0
+image_xscale = .025
+image_yscale = .025
 
 velocity_x = 0
 velocity_y = 0

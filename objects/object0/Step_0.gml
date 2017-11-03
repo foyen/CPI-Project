@@ -114,8 +114,8 @@ if (alive = true)
  
  
 	// Keep the ship within the game's level
-	if (x >= room_width - sprite_width) { x = room_width - sprite_width; }
-	if (x <= 0 + sprite_width) { x = sprite_width; }
-	if (y >= room_height - sprite_height) { y = room_height - sprite_height; }
-	if (y <=0 + sprite_height) { y = sprite_height; }
+	if (x > room_width - sprite_width) { x = sprite_width }
+	if (x < 0 + sprite_width) { x = room_width - sprite_width; }
+	if (y > room_height - sprite_height) { y = sprite_height; }
+	if (y < 0 + sprite_height) { y = room_height - sprite_height; }
 }
