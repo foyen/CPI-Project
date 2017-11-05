@@ -44,14 +44,17 @@ if (alive = true)
 			unit_y = 0
 		}
 
-		velocity_x += (unit_x * movement_speed) / 20
-		velocity_y += (unit_y * movement_speed) / 20
+		speed_x = unit_x * movement_speed
+		speed_y = unit_y * movement_speed
+		
+		velocity_x += (speed_x) / 20
+		velocity_y += (speed_y) / 20
 	
 		var vxy = abs(velocity_x) + abs(velocity_y)
-		if (vxy > max_speed)
+		if (vxy > max_diag_speed)
 		{
-			velocity_x = velocity_x * (max_speed / vxy)
-			velocity_y = velocity_y * (max_speed / vxy)
+			velocity_x = velocity_x * (max_diag_speed / vxy)
+			velocity_y = velocity_y * (max_diag_speed / vxy)
 		}
 
 		if (movement_speed <= max_speed) { movement_speed += acceleration; }
@@ -85,17 +88,20 @@ if (alive = true)
 				unit_y = 0
 			 }
 		
+			speed_x = unit_x * movement_speed
+			speed_y = unit_y * movement_speed
+			
 			var vxy = abs(velocity_x) + abs(velocity_y)
-			if (vxy > max_speed)
+			if (vxy > max_diag_speed)
 			{
-				velocity_x = velocity_x * (max_speed / vxy)
-				velocity_y = velocity_y * (max_speed / vxy)
+				velocity_x = velocity_x * (max_diag_speed / vxy)
+				velocity_y = velocity_y * (max_diag_speed / vxy)
 			}
 		
-			if (velocity_x>0) { velocity_x = min(velocity_x, (unit_x * movement_speed)) }
-			if (velocity_y>0) { velocity_y = min(velocity_y, (unit_y * movement_speed)) }
-			if (velocity_x<0) { velocity_x = max(velocity_x, (unit_x * movement_speed)) }
-			if (velocity_y<0) { velocity_y = max(velocity_y, (unit_y * movement_speed)) }
+			if (velocity_x>0) { velocity_x = min(velocity_x, (speed_x)) }
+			if (velocity_y>0) { velocity_y = min(velocity_y, (speed_y)) }
+			if (velocity_x<0) { velocity_x = max(velocity_x, (speed_x)) }
+			if (velocity_y<0) { velocity_y = max(velocity_y, (speed_y)) }
 		
 			x += velocity_x
 			y -= velocity_y

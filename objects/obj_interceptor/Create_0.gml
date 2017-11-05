@@ -22,6 +22,9 @@ canfire = false;
 velocity_x = 0
 velocity_y = 0
 
+speed_x = 0 // speed_x = unit_x * movement_speed
+speed_y = 0 // speed_y = unit_y * movement_speed
+
 image_speed = 0
 
 

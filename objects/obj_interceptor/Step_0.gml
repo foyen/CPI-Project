@@ -43,6 +43,9 @@ if( abs(point_distance(x, y, object0.x, object0.y)) < 800 )  // near player
 		unit_y = 0
 	}
 
+	speed_x = unit_x * movement_speed
+	speed_y = unit_y * movement_speed
+
 	velocity_x += (unit_x * movement_speed) / 20
 	velocity_y += (unit_y * movement_speed) / 20
 	
