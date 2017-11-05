@@ -7,14 +7,14 @@ if (alive = true)
 	
 	 if(leftPressed)
 	 {
-		image_angle += 10 mod 360;
+		image_angle += 5 mod 360;
 	 }
  
  
  
 	 if(rightPressed)
 	 {
-		image_angle -= 10 mod 360;
+		image_angle -= 5 mod 360;
 	 }
  
 	 if(upPressed) 
@@ -44,8 +44,8 @@ if (alive = true)
 			unit_y = 0
 		}
 
-		velocity_x += (unit_x * movement_speed) / 10
-		velocity_y += (unit_y * movement_speed) / 10
+		velocity_x += (unit_x * movement_speed) / 20
+		velocity_y += (unit_y * movement_speed) / 20
 	
 		var vxy = abs(velocity_x) + abs(velocity_y)
 		if (vxy > max_speed)
@@ -54,7 +54,7 @@ if (alive = true)
 			velocity_y = velocity_y * (max_speed / vxy)
 		}
 
-		if (movement_speed <= max_speed) { movement_speed += 2; }
+		if (movement_speed <= max_speed) { movement_speed += acceleration; }
 
 		x += velocity_x
 		y -= velocity_y
@@ -90,7 +90,6 @@ if (alive = true)
 			{
 				velocity_x = velocity_x * (max_speed / vxy)
 				velocity_y = velocity_y * (max_speed / vxy)
-				//show_debug_message("WAKE ME UP");
 			}
 		
 			if (velocity_x>0) { velocity_x = min(velocity_x, (unit_x * movement_speed)) }
@@ -101,7 +100,7 @@ if (alive = true)
 			x += velocity_x
 			y -= velocity_y
 	 
-			movement_speed -= 1
+			movement_speed -= 0.3
 		 }
 	 
 		 else
@@ -118,4 +117,14 @@ if (alive = true)
 	if (x < 0 + sprite_width) { x = room_width - sprite_width; }
 	if (y > room_height - sprite_height) { y = sprite_height; }
 	if (y < 0 + sprite_height) { y = room_height - sprite_height; }
+	
+	// If ship is invincible, have it blink
+	if (alarm[5] > 0) { invincible_step_count++ }
+	
+	if (invincible_step_count > 2)
+	{
+		invincible_step_count = 0
+		if (invincible = true && visible = true) { visible = false }
+		else if (invincible = true && visible = false) { visible = true }
+	}
 }

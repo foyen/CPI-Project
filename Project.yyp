@@ -239,11 +239,27 @@
             }
         },
         {
+            "Key": "51ac3116-e35f-47c2-baba-7b196b3c5ae3",
+            "Value": {
+                "id": "96a66903-2026-4199-90c4-8b336fda4a15",
+                "resourcePath": "objects\\obj_asteroidlarge\\obj_asteroidlarge.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "55ed9ebb-b68d-4015-8462-621b72bc4c5f",
             "Value": {
                 "id": "7247082a-98dd-425d-8e3e-5fc3b9f953b5",
                 "resourcePath": "views\/55ed9ebb-b68d-4015-8462-621b72bc4c5f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5df22166-5968-42c5-a9f0-53deeb9eda68",
+            "Value": {
+                "id": "fc9f309e-1aa6-48a1-9d19-4dac039a66c3",
+                "resourcePath": "sprites\\spr_asteroidlarge\\spr_asteroidlarge.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -348,6 +364,14 @@
                 "id": "270c16d8-feba-4774-bdc7-88739d2e30a9",
                 "resourcePath": "views\\a437c0e4-d6f6-4977-a4f6-964659c13653.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ab874173-4e6f-4fda-84b2-2923c4d04b6c",
+            "Value": {
+                "id": "e5a7177d-ea65-4594-a74b-cfea54faf278",
+                "resourcePath": "sprites\\spr_asteroidmedium\\spr_asteroidmedium.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -476,6 +500,14 @@
                 "id": "3cc610d4-32e2-49ab-9a8d-d3e22aee7ed8",
                 "resourcePath": "views\/e69aed67-0627-44fa-847d-9898f7df4e24.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ea7f778c-b123-44b2-a433-2402f9dc3a80",
+            "Value": {
+                "id": "2c0c83ad-ec13-4b5c-8d83-acd98bb74a68",
+                "resourcePath": "objects\\obj_asteroidmedium\\obj_asteroidmedium.yy",
+                "resourceType": "GMObject"
             }
         },
         {

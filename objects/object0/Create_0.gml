@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 movement_speed = 0
-max_speed = 30
+max_speed = 15
+acceleration = 1
 
 image_speed = 0
 image_xscale = .025
@@ -20,3 +21,7 @@ unit_y = 0
 
 alive = true // player starts alive
 reloaded = true
+invincible = false
+invincible_step_count = 0
+
+bomb_set = false

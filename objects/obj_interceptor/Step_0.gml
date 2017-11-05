@@ -43,8 +43,8 @@ if( abs(point_distance(x, y, object0.x, object0.y)) < 800 )  // near player
 		unit_y = 0
 	}
 
-	velocity_x += (unit_x * movement_speed) / 10
-	velocity_y += (unit_y * movement_speed) / 10
+	velocity_x += (unit_x * movement_speed) / 20
+	velocity_y += (unit_y * movement_speed) / 20
 	
 	// This prevents enemies from moving faster diagonally.
 	var vxy = abs(velocity_x) + abs(velocity_y)
@@ -86,41 +86,15 @@ else
 
 		move_towards_point(x + varx, (y+ -vary), 5)	
 		Calc_img_angle(x + varx, (y+ (-vary)), self)  // continue forward
-		alarm[3] = room_speed * 3; // Go back
+		//alarm[3] = room_speed * 3; // Go back
 	
 		moving_to_loc = true;
 	
 	}
 }
 
-
-if(can_fire)
-{
-	//Weapon code here
-
-}
-
 // if it reaches the edge of the screen, turn around.
-if (x > room_width)
-{
-	x = room_width
-	velocity_x *= -1
-}
-
-if (x < 0)
-{
-	x = 0
-	velocity_x *= -1
-}
-
-if (y > room_height)
-{
-	y = room_height
-	velocity_y *= -1
-}
-
-if (y < 0)
-{
-	y = 0
-	velocity_y *= -1
-}
+if (x > room_width) { x = room_width-1; velocity_x *= -1 }
+if (x < 0) { x = 1; velocity_x *= -1 }
+if (y > room_height) { y = room_height-1; velocity_y *= -1 }
+if (y < 0) { y = 1; velocity_y *= -1 }

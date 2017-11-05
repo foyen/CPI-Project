@@ -29,8 +29,8 @@ var unit_y = vary / magnitude
 }
 
 
-hspeed = varx * 45
-vspeed = -vary * 45
+hspeed = varx * 35
+vspeed = -vary * 35
 
 
 
