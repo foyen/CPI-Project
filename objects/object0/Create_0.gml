@@ -31,3 +31,5 @@ bomb_set = false // Prevents you from using multiple smart bombs when the button
 
 vxy = 0 // velocity_x + velocity_y
 speed_cut = max_speed / vxy // Cuts the speed by max_speed / vxy to cap diagonal speed.
+
+astronaut_count = 0

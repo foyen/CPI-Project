@@ -31,14 +31,6 @@
     },
     "resources": [
         {
-            "Key": "01abe63d-43a2-411f-8012-93e21afea62b",
-            "Value": {
-                "id": "2882ab76-8775-43af-ac04-28f08caa8d8c",
-                "resourcePath": "sprites\/sprite9\/sprite9.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "0a929f56-65ee-4149-a9f3-d2b40393dbfd",
             "Value": {
                 "id": "e340a778-9ddd-4625-82d9-a6200f4f3405",
@@ -47,11 +39,11 @@
             }
         },
         {
-            "Key": "10127531-d7ca-4832-b9af-25fe58d05af9",
+            "Key": "0d70593f-f1c6-4d81-b705-e56507adc6e9",
             "Value": {
-                "id": "01b0e626-1ed6-4f74-bed6-f28ca664d324",
-                "resourcePath": "sprites\/sprite8\/sprite8.yy",
-                "resourceType": "GMSprite"
+                "id": "7bf37276-a8e9-444f-9d54-d22e99a11e45",
+                "resourcePath": "objects\\obj_spacestation\\obj_spacestation.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -223,6 +215,14 @@
             }
         },
         {
+            "Key": "46efb518-e2e4-4528-a6dd-6ea7b6c23b19",
+            "Value": {
+                "id": "fd6de50b-d13d-470a-8d62-a66fa7d23c03",
+                "resourcePath": "sprites\\spr_spacestation\\spr_spacestation.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4732fa4a-bab0-487b-b9ac-caa1febde584",
             "Value": {
                 "id": "852974c3-44c4-40dc-9e18-89930622cd61",
@@ -391,19 +391,19 @@
             }
         },
         {
+            "Key": "b30958b3-f99e-46f2-94d9-d3dbfeddcff4",
+            "Value": {
+                "id": "5684eef5-8e1e-47f7-904c-6fb42459b353",
+                "resourcePath": "sprites\\spr_astronaut\\spr_astronaut.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bb02c9a1-cc78-4671-84c4-e8a28c2bf05d",
             "Value": {
                 "id": "714fb087-4327-485f-9b5f-65a034886243",
                 "resourcePath": "views\/bb02c9a1-cc78-4671-84c4-e8a28c2bf05d.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "bdbc61b1-61fe-4830-9066-b5247cf492ab",
-            "Value": {
-                "id": "910b136c-c370-4967-825c-6cabf5116699",
-                "resourcePath": "sprites\/sprite5\/sprite5.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -507,6 +507,14 @@
             "Value": {
                 "id": "2c0c83ad-ec13-4b5c-8d83-acd98bb74a68",
                 "resourcePath": "objects\\obj_asteroidmedium\\obj_asteroidmedium.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ec3a6f28-dc95-48fc-8ccd-9548f019d4b6",
+            "Value": {
+                "id": "86da76bd-f1bd-4443-bb08-e31786ee4acd",
+                "resourcePath": "objects\\obj_astronaut\\obj_astronaut.yy",
                 "resourceType": "GMObject"
             }
         },

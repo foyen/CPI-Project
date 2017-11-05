@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+score += 30
 instance_create_layer(x, y, "Instances", obj_explosion)
 asteroid1 = instance_create_layer(x, y, "Instances", obj_asteroidmedium)
 asteroid2 = instance_create_layer(x, y, "Instances", obj_asteroidmedium)

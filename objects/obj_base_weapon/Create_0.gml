@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+step_count = 0
 image_angle = object0.image_angle
 
 image_xscale = .70
