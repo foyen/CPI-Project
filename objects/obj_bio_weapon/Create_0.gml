@@ -13,3 +13,5 @@ velocity_y = 0
 reloaded = true;
 
 bullet_speed = 15
+
+bio_health = 2500

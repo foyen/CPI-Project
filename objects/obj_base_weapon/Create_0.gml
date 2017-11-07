@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
+dammage = 50
 step_count = 0
 image_angle = object0.image_angle
 

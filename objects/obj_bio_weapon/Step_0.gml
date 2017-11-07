@@ -44,7 +44,7 @@ if(abs(point_distance(x,y,object0.x, object0.y))< 800) // inrange to fire
 		show_debug_message(string(angle))
 	if(reloaded)
 	{
-	 for(var i =-20; i < 20; i+= 5)
+	 for(var i =-10; i < 10; i+= 5)
 	 {
 		show_debug_message("fireing " + string(i))
 		var bullet = instance_create_layer(x,y, "instances", obj_base_enemyweapon)
@@ -61,4 +61,15 @@ if(abs(point_distance(x,y,object0.x, object0.y))< 800) // inrange to fire
 	 alarm[0] = room_speed * 2
 	}
 		
+}
+
+
+if(bio_health < 0){
+ var explo = instance_create_layer(x,y, "Instances", obj_explosion)
+ explo.image_xscale = 5
+ explo.image_yscale = 5
+ explo.image_speed = 0.65
+ score+= 10000
+ instance_destroy()
+
 }
